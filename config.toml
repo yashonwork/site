@@ -28,20 +28,22 @@ favicon_emoji = "&#x1f5a4;"
 feed_icon = true
 layout = "center"
 show_default_author = false
-color_scheme = "terminus"
+color_scheme = "monochrome-dark"
 color_scheme_switcher = false
 stylesheets = ["css/monochrome.css"]
 copy_button = true
 copyright = "&copy; $YEAR $AUTHOR"
+socials = [
+  { name = "email", url = "mailto:alex@example.com" },
+  { name = "github", url = "https://github.com" },
+  { name = "sourcehut", url = "https://sr.ht/~username" },
+  { name = "zenodo", url = "https://zenodo.org" },
+  { name = "arxiv", url = "https://arxiv.org" },
+]
 
 main_menu = [
   { name = "about", url = "about", trailing_slash = true },
   { name = "blog", url = "blog", trailing_slash = true },
-]
-
-socials = [
-  { name = "email", url = "mailto:alex@example.com" },
-  { name = "github", url = "https://github.com" },
 ]
 
 [extra.content_security_policy]
