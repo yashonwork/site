@@ -1,0 +1,52 @@
+base_url = "https://example.com"
+title = "Alex Rivera"
+description = "Personal site of Alex Rivera"
+theme = "terminus"
+compile_sass = true
+generate_feeds = true
+author = "Alex Rivera"
+build_search_index = true
+
+taxonomies = [
+  { name = "tags", feed = true },
+  { name = "categories", feed = true, paginate_by = 5 },
+]
+
+[markdown]
+render_emoji = true
+bottom_footnotes = true
+lazy_async_image = true
+github_alerts = true
+
+[markdown.highlighting]
+style = "inline"
+theme = "monokai"
+
+[extra]
+close_responsive_menu_on_resize = true
+favicon_emoji = "&#x1f5a4;"
+feed_icon = true
+layout = "center"
+show_default_author = false
+color_scheme = "terminus"
+color_scheme_switcher = false
+stylesheets = ["css/monochrome.css"]
+copy_button = true
+copyright = "&copy; $YEAR $AUTHOR"
+
+main_menu = [
+  { name = "about", url = "about", trailing_slash = true },
+  { name = "blog", url = "blog", trailing_slash = true },
+]
+
+socials = [
+  { name = "email", url = "mailto:alex@example.com" },
+  { name = "github", url = "https://github.com" },
+]
+
+[extra.content_security_policy]
+enable = false
+
+[extra.responsive_images]
+widths = [640, 784, 1280]
+fallback_width = 1280

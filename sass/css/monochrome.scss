@@ -1,0 +1,40 @@
+:root:has(body[data-theme="terminus"]) {
+  --background-color: #000;
+  --text-color: #fff;
+  --accent-color: #fff;
+  --footnote-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  background: transparent !important;
+  color: var(--text-color) !important;
+  padding: 5px 0 !important;
+}
+
+.header-logo-container::after {
+  display: none !important;
+}
+
+:root {
+  --alert-note-border: #fff;
+  --alert-note-bg: #333;
+  --alert-note-code: #444;
+  --alert-tip-border: #fff;
+  --alert-tip-bg: #333;
+  --alert-tip-code: #444;
+  --alert-info-border: #fff;
+  --alert-info-bg: #333;
+  --alert-info-code: #444;
+  --alert-important-border: #fff;
+  --alert-important-bg: #333;
+  --alert-important-code: #444;
+  --alert-warning-border: #fff;
+  --alert-warning-bg: #333;
+  --alert-warning-code: #444;
+  --alert-danger-border: #fff;
+  --alert-danger-bg: #333;
+  --alert-danger-code: #444;
+  --alert-caution-border: #fff;
+  --alert-caution-bg: #333;
+  --alert-caution-code: #444;
+}
